@@ -1,0 +1,6 @@
+C:\Users\vlanga\Documents\Work_UBB\Metode_Avansate_de_Programare\CSharp_ToyLanguage\CSharp_ToyLanguage\bin\Debug\CSharp_ToyLanguage.exe.config
+C:\Users\vlanga\Documents\Work_UBB\Metode_Avansate_de_Programare\CSharp_ToyLanguage\CSharp_ToyLanguage\bin\Debug\CSharp_ToyLanguage.exe
+C:\Users\vlanga\Documents\Work_UBB\Metode_Avansate_de_Programare\CSharp_ToyLanguage\CSharp_ToyLanguage\bin\Debug\CSharp_ToyLanguage.pdb
+C:\Users\vlanga\Documents\Work_UBB\Metode_Avansate_de_Programare\CSharp_ToyLanguage\CSharp_ToyLanguage\obj\Debug\CSharp_ToyLanguage.csprojResolveAssemblyReference.cache
+C:\Users\vlanga\Documents\Work_UBB\Metode_Avansate_de_Programare\CSharp_ToyLanguage\CSharp_ToyLanguage\obj\Debug\CSharp_ToyLanguage.exe
+C:\Users\vlanga\Documents\Work_UBB\Metode_Avansate_de_Programare\CSharp_ToyLanguage\CSharp_ToyLanguage\obj\Debug\CSharp_ToyLanguage.pdb
