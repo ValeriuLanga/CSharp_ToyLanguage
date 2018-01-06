@@ -9,6 +9,7 @@ namespace CSharp_ToyLanguage.Utils
     class ExecutionStack<T> : ExecutionStackInterface<T>
     {
         private Stack<T> stack;
+
         public ExecutionStack()
         {
             stack = new Stack<T>();

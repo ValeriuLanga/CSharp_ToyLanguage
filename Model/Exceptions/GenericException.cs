@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace CSharp_ToyLanguage.Exceptions
 {
-    class GenericException
+    class GenericException : ApplicationException
     {
+        public GenericException() : base("") { }
+        public GenericException(string message) : base(message) { }
+        public GenericException(string message, Exception exception) : 
+            base(message + " " + exception.Message) { }
+
     }
 }
