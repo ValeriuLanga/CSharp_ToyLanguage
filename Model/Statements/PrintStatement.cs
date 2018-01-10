@@ -9,27 +9,26 @@ using CSharp_ToyLanguage.Expressions;
 
 namespace CSharp_ToyLanguage.Model.Statements
 {
-    class AssignStatement : Statement
+    class PrintStatement : Statement
     {
-        private string variableName;
         private Expression expression;
 
-        public AssignStatement(string varName, Expression expr)
+        public PrintStatement(Expression expression)
         {
-            variableName = varName;
-            expression = expr;
+            this.expression = expression;
         }
 
         public ProgramState Execute(ProgramState programState)
         {
             int resultValue = expression.Evaluate(programState.SymbolTable);
-            programState.SymbolTable[variableName] = resultValue;
+            programState.OutputList.add(resultValue);
 
             return programState;
         }
+
         public override string ToString()
         {
-            return variableName + " := " + expression + ";";
+            return "print( " + expression + " );";
         }
     }
 }

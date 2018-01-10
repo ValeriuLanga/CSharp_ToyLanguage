@@ -15,19 +15,23 @@ namespace CSharp_ToyLanguage.Utils
         private SymbolTableInterface<string, int> symbolTable;
         private FileTableInterface<int, FileDescriptor> fileTable;
         private OutputListInterface<int> outputList;
-        //private Statement initialProgram; 
+        private Statement statement;                   // as opposed to the java version, i have added an initial state here
+                                                       // so there is no need for a manual push of the statement to the stack
 
         public ProgramState(
             ExecutionStackInterface<Statement> execStack,
             SymbolTableInterface<string, int> symTable,
             OutputListInterface<int> outList,
-            FileTableInterface<int, FileDescriptor> fTable
+            FileTableInterface<int, FileDescriptor> fTable,
+            Statement initialStatement
             )
         {
             executionStack = execStack;
             symbolTable = symTable;
             outputList = outList;
             fileTable = fTable;
+            statement = initialStatement;
+            execStack.push(initialStatement);   // push the initial statement onto the stack
         }
 
         public ExecutionStackInterface<Statement> ExecutionStack
@@ -54,11 +58,11 @@ namespace CSharp_ToyLanguage.Utils
             set { outputList = value; }
         }
 
-        //public Statement Program
-        //{
-        //    get { return prg; }
-        //    set { prg = value; }
-        //}
+        public Statement Program
+        {
+            get { return statement; }
+            set { statement = value; }
+        }
 
         public override string ToString()
         {

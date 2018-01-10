@@ -13,7 +13,7 @@ namespace CSharp_ToyLanguage.Model.FileTable
 
         public FileTable()
         {
-            map = new Dictionary<K, V>)();
+            map = new Dictionary<K, V>();
         }
 
         public V this[K key]
