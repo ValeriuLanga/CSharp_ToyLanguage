@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_ToyLanguage.Repository
+namespace CSharp_ToyLanguage.Repo
 {
     interface RepositoryInterface
     {

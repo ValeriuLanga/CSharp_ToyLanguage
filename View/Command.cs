@@ -28,7 +28,7 @@ namespace CSharp_ToyLanguage.View
 
         public override string ToString()
         {
-            return string.Format("{0:2} : {1:6} : {2}", option, description);
+            return option + " " + description;
         }
     }
 }

@@ -21,10 +21,15 @@ namespace CSharp_ToyLanguage.Model.Statements
 
         public ProgramState Execute(ProgramState programState)
         {
-            programState.ExecutionStack.push(firstStatement);
             programState.ExecutionStack.push(secondStatement);
+            programState.ExecutionStack.push(firstStatement);
              
             return programState;
+        }
+
+        public override string ToString()
+        {
+            return firstStatement.ToString() + " " + secondStatement.ToString();
         }
     }
 }

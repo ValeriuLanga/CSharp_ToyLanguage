@@ -71,8 +71,8 @@
     <Compile Include="Model\ExecutionStack\ExecutionStackInterface.cs" />
     <Compile Include="Model\ProgramState.cs" />
     <Compile Include="Model\SymbolTable\SymbolTableInterface.cs" />
-    <Compile Include="Repository\Repository.cs" />
-    <Compile Include="Repository\RepositoryInterface.cs" />
+    <Compile Include="repository\Repository.cs" />
+    <Compile Include="repository\RepositoryInterface.cs" />
     <Compile Include="Utils\IdGenerator.cs" />
     <Compile Include="View\Command.cs" />
     <Compile Include="View\ExitCommand.cs" />

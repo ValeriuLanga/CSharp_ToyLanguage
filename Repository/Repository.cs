@@ -10,7 +10,7 @@ using CSharp_ToyLanguage.Statements;
 using CSharp_ToyLanguage.Model.OutputList;
 using CSharp_ToyLanguage.Model.FileTable;
 
-namespace CSharp_ToyLanguage.Repository
+namespace CSharp_ToyLanguage.Repo
 {
     class Repository : RepositoryInterface
     {
